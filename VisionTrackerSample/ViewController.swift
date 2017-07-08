@@ -87,7 +87,7 @@ final class ViewController: UIViewController {
         return VNSequenceRequestHandler()
     }()
     
-    private var mode: DetectionMode = .faces {
+    private var mode: DetectionMode = .rectangles {
         didSet {
             reset()
             modeLabel.text = mode.description
